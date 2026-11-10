@@ -29,7 +29,7 @@ nav .links a{text-decoration:none;color:var(--muted)} nav .links a:hover{color:v
 .btn{display:inline-flex;align-items:center;gap:10px;font:600 18px/1 Inter,system-ui,sans-serif;padding:16px 24px;border-radius:10px;text-decoration:none;border:1px solid var(--ink);background:var(--ink);color:#fff;transition:transform .12s,background .12s}
 .btn:hover{transform:translateY(-1px);background:#000}
 .btn.ghost{background:#fff;color:var(--ink);border-color:#D9D8D5} .btn.ghost:hover{background:var(--soft)}
-.btn.sm{padding:11px 16px;font-size:16px}
+.btn.sm{padding:11px 16px;font-size:16px;white-space:nowrap} .mb{display:none}
 .hero{padding:84px 0 40px}
 .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
 .pill{display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:600;color:var(--muted);background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:6px 14px}
@@ -97,13 +97,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   .strip{grid-template-columns:1fr 1fr} .strip > :last-child{display:none}
   .sec{padding:60px 0}
   .btn{width:100%;justify-content:center}
-  nav .btn{width:auto}
+  nav .btn{width:auto} .dk{display:none} .mb{display:inline}
   .shot.paper{padding:16px 16px 0;max-height:420px}
 }
 </style>
 </head>
 <body>
-<nav><div class="wrap"><a class="logo" href="#top"><i>FD</i>ForwardDesk</a><div class="links"><a href="#video">Video</a><a href="#features">Features</a><a href="#tour">Tour</a><a href="#how">How it works</a></div><a class="btn sm" href="https://aibit.github.io/forwarddesk/" target="_blank" rel="noopener">Open the live demo</a></div></nav>
+<nav><div class="wrap"><a class="logo" href="#top"><i>FD</i>ForwardDesk</a><div class="links"><a href="#video">Video</a><a href="#features">Features</a><a href="#tour">Tour</a><a href="#how">How it works</a></div><a class="btn sm" href="https://aibit.github.io/forwarddesk/" target="_blank" rel="noopener"><span class="dk">Open the live demo</span><span class="mb">Live demo</span></a></div></nav>
 
 <header class="hero" id="top"><div class="wrap">
   <div>
