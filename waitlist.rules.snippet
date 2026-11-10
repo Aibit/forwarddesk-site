@@ -1,0 +1,33 @@
+// ===================== ForwardDesk landing-page waitlist =====================
+// Paste this block INSIDE `match /databases/{database}/documents { ... }` of the
+// app repo's firestore.rules (github.com/Aibit/forwarddesk) before deploying rules.
+// Deploying rules replaces the whole ruleset for the project, so the waitlist block
+// must live in the same file as the app's rules.
+//
+// Public visitors may only CREATE one well-formed signup. Nobody can read, list,
+// update or delete through the client SDK; staff export with the Admin SDK
+// (tools/export-waitlist.mjs), which bypasses rules.
+
+    function validWaitlistEntry(d) {
+      return d.keys().hasOnly(['email', 'company', 'role', 'country', 'shipments', 'note',
+                               'consent', 'source', 'page', 'lang', 'createdAt'])
+        && d.keys().hasAll(['email', 'consent', 'createdAt'])
+        && d.email is string && d.email.size() >= 6 && d.email.size() <= 254
+        && d.email.matches('^[^@ ]+@[^@ ]+[.][^@ ]+$')
+        && d.consent == true
+        && d.createdAt == request.time
+        && (!('company' in d)   || (d.company is string   && d.company.size()   <= 120))
+        && (!('role' in d)      || (d.role is string      && d.role.size()      <= 80))
+        && (!('country' in d)   || (d.country is string   && d.country.size()   <= 80))
+        && (!('note' in d)      || (d.note is string      && d.note.size()      <= 1000))
+        && (!('shipments' in d) || d.shipments in ['lt10', '10-50', '50-200', '200-1000', 'gt1000'])
+        && (!('source' in d)    || d.source in ['hero', 'cta'])
+        && (!('page' in d)      || (d.page is string      && d.page.size()      <= 120))
+        && (!('lang' in d)      || (d.lang is string      && d.lang.size()      <= 16));
+    }
+
+    match /waitlist/{entryId} {
+      allow create: if validWaitlistEntry(request.resource.data);
+      allow read, update, delete: if false;
+    }
+// =================== end ForwardDesk landing-page waitlist ===================
