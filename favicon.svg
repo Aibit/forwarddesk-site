@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none" role="img" aria-label="ForwardDesk">
+  <style>
+    .dark { display: none; }
+    @media (prefers-color-scheme: dark) {
+      .light { display: none; }
+      .dark { display: inline; }
+    }
+  </style>
+  <g class="light">
+<path d="M 13.8 70.34 Q 46.35 69.4 78.4 69.66 Q 84.2 69.6 84.1 75.4 Q 84.51 91.85 83.51 107.8 Q 83.4 114.2 77.0 114.13 Q 45.25 114.4 14.0 113.46 Q 8.0 113.4 7.94 107.4 Q 7.15 92.0 7.66 76.6 Q 7.6 70.4 13.8 70.34 Z" fill="#FFFFFF" stroke="#191919" stroke-width="8.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 38.89 83.1 Q 39.38 91.9 38.68 100.7 M 52.92 83.1 Q 52.51 91.9 53.1 100.7" fill="none" stroke="#191919" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 24.4 12.45 Q 56.3 12.1 88.6 12.95 Q 95.0 13.0 94.88 19.4 Q 95.24 34.3 94.31 48.8 Q 94.2 54.6 88.4 54.54 Q 56.3 54.85 23.8 53.86 Q 17.6 53.8 17.72 47.6 Q 17.4 32.85 18.28 18.4 Q 18.4 12.4 24.4 12.45 Z" fill="#F6E3B0" stroke="#191919" stroke-width="8.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 48.99 25.9 Q 48.58 33.5 49.17 41.1 M 63.62 25.9 Q 64.12 33.5 63.41 41.1" fill="none" stroke="#191919" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 99.0 33.6 Q 111.1 33.37 123.2 32.6 M 112.29 42.01 L 123.2 32.6 L 111.35 23.86" fill="none" stroke="#E8A93B" stroke-width="7.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g class="dark">
+<path d="M 13.8 70.34 Q 46.35 69.4 78.4 69.66 Q 84.2 69.6 84.1 75.4 Q 84.51 91.85 83.51 107.8 Q 83.4 114.2 77.0 114.13 Q 45.25 114.4 14.0 113.46 Q 8.0 113.4 7.94 107.4 Q 7.15 92.0 7.66 76.6 Q 7.6 70.4 13.8 70.34 Z" fill="#2A2A28" stroke="#EDECE9" stroke-width="8.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 38.89 83.1 Q 39.38 91.9 38.68 100.7 M 52.92 83.1 Q 52.51 91.9 53.1 100.7" fill="none" stroke="#EDECE9" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 24.4 12.45 Q 56.3 12.1 88.6 12.95 Q 95.0 13.0 94.88 19.4 Q 95.24 34.3 94.31 48.8 Q 94.2 54.6 88.4 54.54 Q 56.3 54.85 23.8 53.86 Q 17.6 53.8 17.72 47.6 Q 17.4 32.85 18.28 18.4 Q 18.4 12.4 24.4 12.45 Z" fill="#5A4320" stroke="#EDECE9" stroke-width="8.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 48.99 25.9 Q 48.58 33.5 49.17 41.1 M 63.62 25.9 Q 64.12 33.5 63.41 41.1" fill="none" stroke="#EDECE9" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 99.0 33.6 Q 111.1 33.37 123.2 32.6 M 112.29 42.01 L 123.2 32.6 L 111.35 23.86" fill="none" stroke="#F0B84A" stroke-width="7.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

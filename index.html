@@ -7,10 +7,18 @@
 <meta name="description" content="ForwardDesk keeps freight forwarders on top of jobs, deadlines, an agent CRM, documents, billing, quotes, clients and a customer portal, in one calm workspace.">
 <meta property="og:title" content="ForwardDesk · The calm, clear desk for freight forwarders">
 <meta property="og:description" content="Jobs and deadline countdowns, an agent CRM, job documents and billing, quotes that compare lines, and a customer portal.">
-<meta property="og:image" content="https://aibit.github.io/forwarddesk-site/assets/og.jpg">
+<meta property="og:image" content="https://aibit.github.io/forwarddesk-site/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ForwardDesk">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23191919'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='700' fill='white' text-anchor='middle'%3EFD%3C/text%3E%3C/svg%3E">
+<meta name="twitter:image" content="https://aibit.github.io/forwarddesk-site/assets/og.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#FFFFFF">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -22,8 +30,9 @@ a{color:inherit}
 .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
 nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;gap:28px;height:72px}
-.logo{display:flex;align-items:center;gap:12px;font-weight:700;font-size:21px;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
-.logo i{font-style:normal;width:36px;height:36px;border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:14px;letter-spacing:.02em}
+.logo{display:flex;align-items:center;flex:none;text-decoration:none}
+.logo img{display:block;height:40px;width:auto}
+footer .logo img{height:32px;width:auto}
 nav .links{display:flex;gap:26px;margin-left:auto;font-size:17px}
 nav .links a{text-decoration:none;color:var(--muted)} nav .links a:hover{color:var(--ink)}
 .btn{display:inline-flex;align-items:center;gap:10px;font:600 18px/1 Inter,system-ui,sans-serif;padding:16px 24px;border-radius:10px;text-decoration:none;border:1px solid var(--ink);background:var(--ink);color:#fff;transition:transform .12s,background .12s}
@@ -106,7 +115,7 @@ section{scroll-margin-top:90px}
 .mode .btn{margin-top:4px}
 .ph{display:inline-block;font-size:14px;color:var(--muted);margin-top:16px}
 footer{border-top:1px solid var(--line);padding:30px 0 40px;font-size:15px;color:var(--muted)}
-footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
 @media (max-width:960px){
   body{font-size:19px}
   .hero{padding:48px 0 20px}
@@ -118,6 +127,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   nav .links{display:none} nav .btn{margin-left:auto}
 }
 @media (max-width:620px){
+  .logo img{height:34px}
+  footer .logo img{height:28px}
   .wrap{padding:0 20px}
   .grid{grid-template-columns:1fr}
   .strip{grid-template-columns:1fr 1fr} .strip > :last-child{display:none}
@@ -130,7 +141,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 </style>
 </head>
 <body>
-<nav><div class="wrap"><a class="logo" href="#top"><i>FD</i>ForwardDesk</a><div class="links"><a href="#video">Video</a><a href="#features">Features</a><a href="#tour">Tour</a><a href="#how">How it works</a></div><a class="btn sm" href="https://aibit.github.io/forwarddesk/?demo" target="_blank" rel="noopener"><span class="dk">Try the demo</span><span class="mb">Demo</span></a></div></nav>
+<nav><div class="wrap"><a class="logo" href="#top"><img src="assets/logo-horizontal.svg" width="152" height="40" alt="ForwardDesk"></a><div class="links"><a href="#video">Video</a><a href="#features">Features</a><a href="#tour">Tour</a><a href="#how">How it works</a></div><a class="btn sm" href="https://aibit.github.io/forwarddesk/?demo" target="_blank" rel="noopener"><span class="dk">Try the demo</span><span class="mb">Demo</span></a></div></nav>
 
 <header class="hero" id="top"><div class="wrap">
   <div>
@@ -232,7 +243,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   <div class="art-cta" aria-hidden="true"><svg class="art" viewBox="0 0 310 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stack of shipping containers"><title>Stack of shipping containers</title><ellipse cx="150" cy="186" rx="140" ry="7" fill="#F1F1EF"/><path d="M19.9 140.1 L104.8 139.9 L104.0 182.2 L19.4 182.0 Z" fill="#E3E2E0" stroke="#191919" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/><path d="M31.7 143.8 Q32.1 161.2 31.7 178.2" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M44.4 144.4 Q44.2 160.6 44.1 178.1" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M56.0 143.6 Q55.7 160.6 55.8 177.8" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M68.0 144.3 Q67.6 161.0 68.0 178.1" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M80.0 143.8 Q80.0 161.1 80.4 178.4" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M91.9 143.8 Q92.3 161.2 91.8 177.7" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M110.5 139.8 L194.7 139.8 L194.9 182.7 L109.0 181.4 Z" fill="#FBF3DB" stroke="#191919" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/><path d="M122.4 143.9 Q122.3 161.0 121.7 178.1" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M133.7 143.9 Q134.2 160.8 134.4 178.2" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M145.7 143.6 Q145.7 160.8 146.2 177.7" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M157.8 144.2 Q158.0 161.0 157.7 178.1" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M169.8 143.8 Q169.7 160.9 170.4 178.2" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M181.8 143.9 Q181.8 161.3 182.3 178.1" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M199.2 141.0 L283.4 139.5 L284.5 181.7 L199.6 181.1 Z" fill="#E7F3F8" stroke="#191919" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/><path d="M211.8 144.1 Q211.7 161.1 211.9 178.0" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M224.1 144.3 Q224.4 161.0 223.7 177.7" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M235.8 143.8 Q236.3 161.3 236.2 178.4" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M248.3 144.1 Q247.8 161.4 247.9 177.7" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M259.8 144.2 Q259.6 161.4 259.8 178.3" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M271.7 144.2 Q272.1 160.8 271.7 177.8" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M65.1 94.7 L149.2 93.6 L149.8 135.4 L64.0 135.5 Z" fill="#FAEBDD" stroke="#191919" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/><path d="M76.7 97.9 Q77.0 114.6 77.1 131.7" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M89.4 98.1 Q88.9 115.3 89.2 132.1" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M100.6 98.3 Q100.7 114.6 101.2 132.4" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M113.0 98.2 Q112.6 115.1 112.9 132.4" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M125.2 98.3 Q124.7 115.0 125.2 132.2" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M136.9 98.1 Q137.2 115.3 137.3 132.3" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M154.8 94.6 L239.7 94.1 L239.2 135.8 L155.2 136.2 Z" fill="#FFFFFF" stroke="#191919" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/><path d="M167.4 98.3 Q166.7 115.1 167.2 131.9" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M179.0 98.3 Q179.2 115.1 178.7 132.2" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M191.0 97.8 Q190.6 115.1 191.2 132.0" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M202.8 97.6 Q203.1 115.3 202.8 132.1" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M215.3 98.1 Q214.8 114.7 215.0 132.3" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M226.8 97.9 Q226.9 115.1 227.2 132.3" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M110.8 47.8 L194.2 47.6 L193.3 90.0 L110.7 90.7 Z" fill="#EDF3EC" stroke="#191919" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/><path d="M121.8 51.7 Q122.2 69.4 122.0 85.8" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M134.1 52.0 Q133.8 68.9 133.9 86.3" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M145.7 51.6 Q146.4 69.0 146.3 85.6" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M157.8 52.2 Q158.2 69.1 157.6 85.7" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M170.3 51.8 Q170.0 68.6 169.7 85.6" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/><path d="M182.1 52.1 Q182.1 69.0 182.2 86.4" fill="none" stroke="#191919" stroke-width="1.4" stroke-linecap="round"/></svg></div>
 </div></section>
 
-<footer><div class="wrap"><span>ForwardDesk · a personal project · <a href="#waitlist">Join the waitlist</a></span><span>The demo uses sample data only. Rates, containers, companies and amounts shown are illustrative.</span></div></footer>
+<footer><div class="wrap"><a class="logo" href="#top"><img src="assets/logo-horizontal.svg" width="122" height="32" alt="ForwardDesk"></a><span>A personal project · <a href="#waitlist">Join the waitlist</a></span><span>The demo uses sample data only. Rates, containers, companies and amounts shown are illustrative.</span></div></footer>
 <script src="config.js"></script>
 <script type="module" src="assets/waitlist.js"></script>
 </body>
